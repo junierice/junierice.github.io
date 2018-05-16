@@ -108,24 +108,25 @@
 
 
 
-  <meta name="description" content="你好，欢迎来到我的个人技术博客。">
+  <meta name="description" content="本文根据表严肃讲Git - Git教程记录Git常用命令。 安装和配置从Git的官网下载安装。安装好后查看版本：1git --version 配置用户名和联系邮箱：12git config --global user.name &quot;junierice&quot;git config --global user.email &quot;junierice@gmail.com&quot; 配置好了之后查看项目：1git config">
+<meta name="keywords" content="Git 教程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="first">
-<meta property="og:url" content="http://junierice.github.io/2018/05/16/first/index.html">
+<meta property="og:title" content="笔记：Git的常用命令">
+<meta property="og:url" content="http://junierice.github.io/2018/05/16/笔记：Git的命令/index.html">
 <meta property="og:site_name" content="西索的学习笔记">
-<meta property="og:description" content="你好，欢迎来到我的个人技术博客。">
+<meta property="og:description" content="本文根据表严肃讲Git - Git教程记录Git常用命令。 安装和配置从Git的官网下载安装。安装好后查看版本：1git --version 配置用户名和联系邮箱：12git config --global user.name &quot;junierice&quot;git config --global user.email &quot;junierice@gmail.com&quot; 配置好了之后查看项目：1git config">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-16T01:35:10.784Z">
+<meta property="og:updated_time" content="2018-05-16T13:44:29.603Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="first">
-<meta name="twitter:description" content="你好，欢迎来到我的个人技术博客。">
+<meta name="twitter:title" content="笔记：Git的常用命令">
+<meta name="twitter:description" content="本文根据表严肃讲Git - Git教程记录Git常用命令。 安装和配置从Git的官网下载安装。安装好后查看版本：1git --version 配置用户名和联系邮箱：12git config --global user.name &quot;junierice&quot;git config --global user.email &quot;junierice@gmail.com&quot; 配置好了之后查看项目：1git config">
 
 
 
 
 
 
-  <link rel="canonical" href="http://junierice.github.io/2018/05/16/first/"/>
+  <link rel="canonical" href="http://junierice.github.io/2018/05/16/笔记：Git的命令/"/>
 
 
 
@@ -135,7 +136,7 @@
   };
 </script>
 
-  <title>first | 西索的学习笔记</title>
+  <title>笔记：Git的常用命令 | 西索的学习笔记</title>
   
 
 
@@ -284,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://junierice.github.io/2018/05/16/first/">
+    <link itemprop="mainEntityOfPage" href="http://junierice.github.io/2018/05/16/笔记：Git的命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="J">
@@ -301,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">first
+          <h1 class="post-title" itemprop="name headline">笔记：Git的常用命令
               
             
           </h1>
@@ -326,7 +327,7 @@
                 
               
 
-              <time title="创建时间：2018-05-16 09:30:27 / 修改时间：09:35:10" itemprop="dateCreated datePublished" datetime="2018-05-16T09:30:27+08:00">2018-05-16</time>
+              <time title="创建时间：2018-05-16 21:16:00 / 修改时间：21:44:29" itemprop="dateCreated datePublished" datetime="2018-05-16T21:16:00+08:00">2018-05-16</time>
             
 
             
@@ -364,7 +365,13 @@
       
 
       
-        <p>你好，欢迎来到我的个人技术博客。</p>
+        <p>本文根据<a href="https://www.bilibili.com/video/av17603446/" target="_blank" rel="noopener">表严肃讲Git - Git教程</a>记录Git常用命令。</p>
+<h3 id="安装和配置"><a href="#安装和配置" class="headerlink" title="安装和配置"></a>安装和配置</h3><p>从<a href="git-scm.com">Git的官网</a>下载安装。<br>安装好后查看版本：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></p>
+<p>配置用户名和联系邮箱：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"junierice"</span></span><br><span class="line">git config --global user.email <span class="string">"junierice@gmail.com"</span></span><br></pre></td></tr></table></figure></p>
+<p>配置好了之后查看项目：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure></p>
+<p>或<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config -l</span><br></pre></td></tr></table></figure></p>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>Git中项目叫做仓库(Repository)，本质上就是个文件夹。<br>进入本地工作区：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> test1</span><br></pre></td></tr></table></figure></p>
+<p>初始化Git：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -383,6 +390,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Git-教程/" rel="tag"># Git 教程</a>
+          
+        </div>
+      
 
       
       
@@ -392,8 +405,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/15/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/05/16/first/" rel="next" title="first">
+                <i class="fa fa-chevron-left"></i> first
               </a>
             
           </div>
@@ -401,10 +414,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/16/笔记：Git的命令/" rel="prev" title="笔记：Git的常用命令">
-                笔记：Git的常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -453,8 +462,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -512,6 +530,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装和配置"><span class="nav-number">1.</span> <span class="nav-text">安装和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建仓库"><span class="nav-number">2.</span> <span class="nav-text">创建仓库</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
