@@ -374,7 +374,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-21 15:07:08" itemprop="dateModified" datetime="2018-05-21T15:07:08+08:00">2018-05-21</time>
+                <time title="修改时间：2018-05-21 15:10:57" itemprop="dateModified" datetime="2018-05-21T15:10:57+08:00">2018-05-21</time>
               
             
           </span>
@@ -438,20 +438,16 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config -l</span><br></pre></td></tr></table></figure>
 <h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>Git中项目叫做仓库(Repository)，本质上就是个文件夹。<br>创建仓库有两种方式。</p>
 <ol>
-<li>本地创建：进入本地工作区，初始化Git：</li>
+<li>本地创建：进入本地工作区，初始化Git：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> test1</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="built_in">cd</span> test1</span><br><span class="line">&gt;git init</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
 <blockquote>
 <p>或在创建新的文件夹同时初始化Git：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;git init test2</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <ol start="2">
-<li>远程拉取：拷贝网址并创建仓库：</li>
+<li>远程拉取：拷贝网址并创建仓库：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/junierice/junierice.github.io.git</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;git <span class="built_in">clone</span> https://github.com/junierice/junierice.github.io.git</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
 <blockquote>
 <p>也可在拷贝时重命名：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;git <span class="built_in">clone</span> https://github.com/junierice/junierice.github.io.git test3</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
