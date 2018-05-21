@@ -374,7 +374,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-21 16:23:48" itemprop="dateModified" datetime="2018-05-21T16:23:48+08:00">2018-05-21</time>
+                <time title="修改时间：2018-05-21 16:30:03" itemprop="dateModified" datetime="2018-05-21T16:30:03+08:00">2018-05-21</time>
               
             
           </span>
@@ -443,27 +443,32 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init test2</span><br></pre></td></tr></table></figure>
 <h4 id="远程拉取"><a href="#远程拉取" class="headerlink" title="远程拉取"></a>远程拉取</h4><p>拷贝网址并创建仓库：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/junierice/junierice.github.io.git</span><br></pre></td></tr></table></figure>
-<p>也可在拷贝时重命名：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/junierice/junierice.github.io.git test3</span><br></pre></td></tr></table></figure></p>
+<p>也可在拷贝时重命名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/junierice/junierice.github.io.git test3</span><br></pre></td></tr></table></figure>
 <p>这时，我们已经完成仓库的创建。列出所有子目录：</p>
-<p>Unix:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -la</span><br></pre></td></tr></table></figure></p>
-<p>Windows:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ dir/a</span><br></pre></td></tr></table></figure></p>
+<p>Unix:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -la</span><br></pre></td></tr></table></figure>
+<p>Windows:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ dir/a</span><br></pre></td></tr></table></figure>
 <p>可以看到默认隐藏的.git文件。</p>
 <h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>查看仓库状态：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
 <p>在初始状态会显示</p>
-<p>No commits yet</p>
-<p>nothing to commit(提交)</p>
+<blockquote>
+<p>No commits yet<br>nothing to commit(提交)</p>
+</blockquote>
 <p>当我们在本地文件夹中做了修改，再次查看仓库状态时，会显示</p>
-<p>Untracked files:</p>
-<p>…</p>
-<p>即未跟踪到的文件。</p>
+<blockquote>
+<p>Untracked files:<br>…<br>即未跟踪到的文件。</p>
+</blockquote>
 <p>此时，将所有修改添加至暂存区：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
 <p>提交版本：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"描述"</span></span><br></pre></td></tr></table></figure>
 <p>此时，查看仓库状态，将会显示</p>
-<p>nothing to commit, working tree clean</p>
-<p>即所有的更改都被保存了。</p>
+<blockquote>
+<p>nothing to commit, working tree clean<br>即所有的更改都被保存了。</p>
+</blockquote>
 <p>这时，查看版本记录，将显示提交过的所有版本：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
 <p>从记录可以看出，对于每次提交的版本，都有一个唯一的“身份证号”，前7位即可用于定位。（按q退出）</p>
