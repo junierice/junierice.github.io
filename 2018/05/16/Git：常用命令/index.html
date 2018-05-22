@@ -113,14 +113,14 @@
   <meta name="description" content="本文根据表严肃讲Git - Git教程记录Git常用命令。 安装和配置安装从Git的官网下载安装。安装好后查看版本： 1$ git --version 配置配置用户名和联系邮箱： 12$ git config --global user.name &quot;junierice&quot;$ git config --global user.email &quot;junierice@gmail.com&quot; 配置好了之后查看项目">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="笔记：Git的常用命令">
-<meta property="og:url" content="http://junierice.github.io/2018/05/16/笔记：Git的命令/index.html">
+<meta property="og:title" content="Git：常用命令">
+<meta property="og:url" content="http://junierice.github.io/2018/05/16/Git：常用命令/index.html">
 <meta property="og:site_name" content="西索的学习笔记">
 <meta property="og:description" content="本文根据表严肃讲Git - Git教程记录Git常用命令。 安装和配置安装从Git的官网下载安装。安装好后查看版本： 1$ git --version 配置配置用户名和联系邮箱： 12$ git config --global user.name &quot;junierice&quot;$ git config --global user.email &quot;junierice@gmail.com&quot; 配置好了之后查看项目">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-22T12:18:33.919Z">
+<meta property="og:updated_time" content="2018-05-22T13:08:53.136Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笔记：Git的常用命令">
+<meta name="twitter:title" content="Git：常用命令">
 <meta name="twitter:description" content="本文根据表严肃讲Git - Git教程记录Git常用命令。 安装和配置安装从Git的官网下载安装。安装好后查看版本： 1$ git --version 配置配置用户名和联系邮箱： 12$ git config --global user.name &quot;junierice&quot;$ git config --global user.email &quot;junierice@gmail.com&quot; 配置好了之后查看项目">
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="http://junierice.github.io/2018/05/16/笔记：Git的命令/"/>
+  <link rel="canonical" href="http://junierice.github.io/2018/05/16/Git：常用命令/"/>
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>笔记：Git的常用命令 | 西索的学习笔记</title>
+  <title>Git：常用命令 | 西索的学习笔记</title>
   
 
 
@@ -312,7 +312,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://junierice.github.io/2018/05/16/笔记：Git的命令/">
+    <link itemprop="mainEntityOfPage" href="http://junierice.github.io/2018/05/16/Git：常用命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Junierice">
@@ -329,7 +329,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">笔记：Git的常用命令
+          <h1 class="post-title" itemprop="name headline">Git：常用命令
               
             
           </h1>
@@ -371,7 +371,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-22 20:18:33" itemprop="dateModified" datetime="2018-05-22T20:18:33+08:00">2018-05-22</time>
+                <time title="修改时间：2018-05-22 21:08:53" itemprop="dateModified" datetime="2018-05-22T21:08:53+08:00">2018-05-22</time>
               
             
           </span>
@@ -402,7 +402,7 @@
 
           
           
-             <span id="/2018/05/16/笔记：Git的命令/" class="leancloud_visitors" data-flag-title="笔记：Git的常用命令">
+             <span id="/2018/05/16/Git：常用命令/" class="leancloud_visitors" data-flag-title="Git：常用命令">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -482,14 +482,21 @@
 <p>简化版：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --oneline</span><br></pre></td></tr></table></figure>
 <p>从记录可以看出，对于每次提交的版本，都有一个唯一的“身份证号”，前7位即可用于定位。（按q退出）</p>
-<p>退回到制定的历史节点（xxx为“身份证号”，7位或以上即可）：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure>
+<p>使用“身份证号”（7位或以上即可）退回到制定的历史节点：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout 身份证号</span><br></pre></td></tr></table></figure>
 <h3 id="三种状态"><a href="#三种状态" class="headerlink" title="三种状态"></a>三种状态</h3><p>从上一节，我们知道文件有三个状态，分别是已修改(modified)、已暂存(staged)、已提交(committed)。<br>在暂存之后，如果做了修改，再提交，那么提交的是加入到暂存区里的内容，而不是最新的内容。</p>
 <h3 id="标签tag"><a href="#标签tag" class="headerlink" title="标签tag"></a>标签tag</h3><p>在不错的、有里程碑意义的版本上，可以打上标签。(a: annotated 有注释的)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a 标签名 -m <span class="string">"备注"</span></span><br></pre></td></tr></table></figure>
+<p>如果需要对过去的版本加上tag，则需要用到该版本的“身份证号”（7位即可）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a 标签名 -m <span class="string">"备注"</span> 身份证号</span><br></pre></td></tr></table></figure>
 <p>列出所有标签：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag</span><br></pre></td></tr></table></figure>
-
+<p>查看某个标签的详细信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show 标签名</span><br></pre></td></tr></table></figure>
+<p>回溯至标签所在的提交：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout 标签名</span><br></pre></td></tr></table></figure>
+<h3 id="分支branch"><a href="#分支branch" class="headerlink" title="分支branch"></a>分支branch</h3><p>创建仓库时，我们会有一条默认的分支，名为master。新建一条分支时，我们可以自定义名称。</p>
+<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><h3 id="多人远程合作"><a href="#多人远程合作" class="headerlink" title="多人远程合作"></a>多人远程合作</h3>
       
     </div>
 
@@ -675,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装和配置"><span class="nav-number">1.</span> <span class="nav-text">安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置"><span class="nav-number">1.2.</span> <span class="nav-text">配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建仓库"><span class="nav-number">2.</span> <span class="nav-text">创建仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本地创建"><span class="nav-number">2.1.</span> <span class="nav-text">本地创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程拉取"><span class="nav-number">2.2.</span> <span class="nav-text">远程拉取</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本用法"><span class="nav-number">3.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种状态"><span class="nav-number">4.</span> <span class="nav-text">三种状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标签tag"><span class="nav-number">5.</span> <span class="nav-text">标签tag</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装和配置"><span class="nav-number">1.</span> <span class="nav-text">安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置"><span class="nav-number">1.2.</span> <span class="nav-text">配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建仓库"><span class="nav-number">2.</span> <span class="nav-text">创建仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本地创建"><span class="nav-number">2.1.</span> <span class="nav-text">本地创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程拉取"><span class="nav-number">2.2.</span> <span class="nav-text">远程拉取</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本用法"><span class="nav-number">3.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种状态"><span class="nav-number">4.</span> <span class="nav-text">三种状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标签tag"><span class="nav-number">5.</span> <span class="nav-text">标签tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支branch"><span class="nav-number">6.</span> <span class="nav-text">分支branch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并分支"><span class="nav-number">7.</span> <span class="nav-text">合并分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程仓库"><span class="nav-number">8.</span> <span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多人远程合作"><span class="nav-number">9.</span> <span class="nav-text">多人远程合作</span></a></li></ol></div>
             
 
           </div>
